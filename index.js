@@ -63,7 +63,7 @@ server.delete('/hubs/:id', (req, res) => {
 })
 
 server.put('/hubs/:id', (req, res) => {
-    const id = req.param.id;
+    const id = req.params.id;
     const hubInfo = req.body;
 
     db.update(id, hubInfo)
